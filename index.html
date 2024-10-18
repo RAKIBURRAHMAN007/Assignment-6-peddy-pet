@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .lato-font {
+            font-family: "Lato", sans-serif;
+        }
+         
+    </style>
+    <style>
+       /* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  height: 50px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#000 0 0);
+  background: 
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+    </style>
+       <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-btn-color': '#0E7A81',
+                
+                
+              }
+            }
+          }
+        }
+      </script>
+      
+      
+
+</head>
+<body class="lato-font">
+  <!-- header section -->
+  <header class="px-5 py-4 lg:px-12 md:px-16 lg:py-10 md:py-8">
+    <nav>
+      <div class="flex items-center justify-between">
+        <div class="flex gap-2 items-center">
+          <div>
+            <img src="images/logo.webp" alt="">
+          </div>
+          <div>
+            <h2 class="font-bold text-2xl">Peddy</h2>
+          </div>
+
+        </div>
+        <!-- mobile nav -->
+        <div class="block lg:hidden md:hidden ">
+          <div class="dropdown dropdown-bottom dropdown-end ">
+            <div tabindex="0" role="button" class="btn m-1 rounded-full border bg-white h-10 w-12"><img src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt=""></div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-24 p-1 shadow">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+             
+            </ul>
+          </div>
+        </div>
+     
+        <div class=" hidden lg:block md:block">
+          <ul class="flex gap-20">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact</a></li>
+            
+          </ul>
+
+
+        </div>
+        <div class=" lg:block md:block">
+          <div class="rounded-full border w-8 h-8 lg:h-12 lg:w-12">
+            <img  src="https://img.icons8.com/?size=100&id=43942&format=png&color=000000" alt="">
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <!-- banner section -->
+    <section class="text-center space-y-1 lg:space-y-4 md:space-y-3">
+      <div class="flex items-center gap-3 justify-center">
+        <h2 class="text-xl font-semibold opacity-65">Bringing Families Together </h2>
+        <img class="h-6 w-6" src="https://img.icons8.com/?size=100&id=QV5JEtrTP6nH&format=png&color=000000" alt="">
+      </div>
+      
+      <div>
+        <h2 class="font-extrabold text-2xl lg:text-5xl md:text-4xl">Your Path to Adoption <br> Starts Here</h2>
+      </div>
+      
+      <div>
+        <p class="font-medium text-[10px] lg:text-sm md:text-sm">Your journey to adoption begins here, where love and companionship await. Let us help you find <br class="hidden lg:block md:block">the perfect furry friend to welcome into your home!</p>
+      </div>
+      <div>
+        <a href="#mainSection"><button id="view-more" class="bg-primary-btn-color text-white btn">View More</button></a>
+      </div>
+      <div class=" flex items-center justify-center ">
+        <img  src="images/pet.webp" alt="">
+      </div>
+
+
+
+
+      
+    </section>
+   
+  </header>
+
+
+  <!-- main section -->
+  <main id="mainSection" class="px-5 py-4 lg:px-12 md:px-16 lg:py-10 md:py-8">
+    <!-- main section banner -->
+    <section>
+      <div class="text-center space-y-3">
+        <h2 class="font-extrabold text-xl lg:text-3xl md:text-3xl">Adopt  Your  Best Friend</h2>
+        <p  class="font-medium opacity-85  text-[10px] lg:text-sm md:text-sm">Every pet deserves a loving home, and you can provide that. <br> Adopt your best friend today and experience the joy of unconditional love!</p>
+      </div>
+
+    </section><br><br>
+    <!-- category btn section -->
+    <section id="category-btn-container" class=" grid gap-1  grid-cols-2 lg:grid-cols-4  md:grid-cols-4  text-center">
+
+
+    </section><br><br>
+    <!-- best deal sort by price section -->
+     <section class="flex justify-between items-center">
+      <div>
+        <h1 class="font-bold text-2xl">Best Deal For you</h1>
+      </div>
+      <div>
+        <a href=""><button id="sort-button"  class="bg-primary-btn-color text-white btn">Sort by Price</button></a>
+      </div>
+     </section><br><br>
+     <!-- all pets section -->
+    <section>
+       <div class="lg:flex justify-between gap-1">
+        
+        <div id="all-card-container" class=" rounded border grid lg:grid-cols-3 md:grid-cols-2 md:pr-3 pt-3 md:pl-2 lg:pl-2 gap-3 pb-2  ">
+          <div class="m-auto lg:ml-96 md:ml-64">
+            <div id="spiner" class="loader block"></div>
+          </div>
+         
+
+        </div><br>
+        <!-- bird not found -->
+        
+        
+        <div  class=" lg:w-[180px] rounded border gap-1 ">
+          <div id="like-container" class="grid grid-cols-2 gap-2" >
+
+          </div>
+          
+        </div>
+       </div>
+    </section>
+
+    <!-- modal -->
+     <div id="modal"></div>
+     <div id="adopt-modal"></div>
+    
+    
+  </main>
+
+  <!-- footer section -->
+  <footer class="bg-black px-5 py-4 lg:px-20 md:px-16 lg:py-10 md:py-8">
+    <div class="text-center lg:text-start md:text-start lg:flex md:flex justify-between ">
+      <div class="space-y-3">
+        <div class="flex gap-2 items-center">
+          <div>
+            <img src="images/logo.webp" alt="">
+          </div>
+          <div>
+            <h2 class="font-bold text-white text-2xl">Peddy</h2>
+          </div>
+  
+        </div>
+        <div>
+          <ul class="space-y-3">
+            <li><a class="text-white font-normal text-base" href="">Location: av. Washington 165, NY CA </a></li>
+            <li><a class="text-white font-normal text-base" href="">54003</a></li>
+            <li><a class="text-white font-normal text-base" href="">Phone: +880 16 36352751</a></li>
+            <li><a class="text-white font-normal text-base" href="">Email: ratulrakibur5@gmail.com</a></li>
+            <li><a class="text-white font-normal text-base" href="">Openings hours: 9.00 AM - 5.00 PM</a></li>
+            
+          </ul>
+        </div>
+        <div class="">
+          <ul class="flex justify-center lg:justify-start md:justify-start">
+            <li><a href=""><img class="w-10" src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" alt=""></a></li>
+            <li><a href=""><img class="w-10" src="https://img.icons8.com/?size=100&id=cMRBi0rI3iwb&format=png&color=000000" alt=""></a></li>
+            <li><a href=""><img class="w-10" src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt=""></a></li>
+            <li><a href=""><img class="w-10" src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt=""></a></li>
+          </ul>
+        </div>
+  
+      </div>
+      <br>
+      <div>
+        <h2 class="font-bold text-2xl text-white">Useful Links</h2>
+        <ul class="space-y-3">
+          <li><a class="text-white font-normal text-base opacity-75" href="">Home</a></li>
+          <li><a class="text-white font-normal text-base opacity-75" href="">About Us</a></li>
+          <li><a class="text-white font-normal text-base opacity-75" href="">Animals</a></li>
+          <li><a class="text-white font-normal text-base opacity-75" href="">Foundation</a></li>
+          <li><a class="text-white font-normal text-base opacity-75" href="">Contact</a></li>
+        </ul>
+  
+      </div>
+      <br>
+      <div>
+        <h1 class="font-bold text-2xl text-white">Drop a Message</h1>
+        <br>
+        <input class="bg-[#1F1F1F] rounded-md text-white h-8 w-full lg:w-52 pl-2" type="text" placeholder="Enter Your Email" name="" id="">
+        <br><br>
+        <a href=""><button  class="bg-primary-btn-color w-full lg:w-52 border-none text-white btn">Subscribe</button></a>
+  
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="index.js"></script>  
+</body>
+</html>
